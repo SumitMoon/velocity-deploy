@@ -1,0 +1,9 @@
+version: '3'
+service:
+    velocity-deploy:
+	image: 'tomcat:9'
+	port:
+	  - "8080:8080"
+	volumes:
+	  - "/mnt/wars:/user/local/tomcat/webapps"
+
